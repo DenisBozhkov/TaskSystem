@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\_ACER\\Desktop\\TaskSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskViewForm.cs [Design]",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs [Design]",
+              "RelativeToolTip": "TaskSystem\\TaskViewForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T21:09:06.851Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskViewForm.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
+              "RelativeToolTip": "TaskSystem\\TaskViewForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T20:37:50.273Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
