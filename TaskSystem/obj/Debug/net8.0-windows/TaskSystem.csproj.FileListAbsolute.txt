@@ -17,3 +17,5 @@ D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.genru
 D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\ref\TaskSystem.dll
 D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskListBox.resources
 D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskDescriptionBox.resources
+D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.sourcelink.json
+D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.CreateProfileDIalog.resources

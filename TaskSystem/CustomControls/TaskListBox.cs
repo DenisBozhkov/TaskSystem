@@ -4,9 +4,18 @@ namespace TaskSystem
 {
     public partial class TaskListBox : UserControl
     {
+        private ProfileModel? loggedInProfile;
         public TaskListBox()
         {
             InitializeComponent();
+        }
+
+        public void SetLoggedInProfile(ProfileModel? profile)
+        {
+            loggedInProfile = profile;
+            foreach(Control control in Controls)
+                if(control is TaskDescriptionBox descriptionBox)
+                    descriptionBox.CanEdit = descriptionBox.TaskAuthor?.CompareTo(profile?.UserName) == 0;
         }
 
         public void Rebind(List<TaskModel> tasks)
@@ -29,6 +38,7 @@ namespace TaskSystem
                     Dock = DockStyle.Top,
                     Tag = description
                 };
+                description.CanEdit = tasks[i].CreatedBy.Equals(loggedInProfile?.UserName);
                 description.EditItem += Description_EditItem;
                 description.DeleteItem += Description_DeleteItem;
                 box.CollapseDescription += Box_CollapseDescription;

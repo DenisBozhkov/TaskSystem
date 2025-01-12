@@ -78,7 +78,7 @@
             descriptionButton.Margin = new Padding(0);
             descriptionButton.Name = "descriptionButton";
             descriptionButton.Size = new Size(38, 36);
-            descriptionButton.TabIndex = 4;
+            descriptionButton.TabIndex = 0;
             descriptionButton.Text = "+";
             descriptionButton.UseVisualStyleBackColor = true;
             descriptionButton.Click += descriptionButton_Click;

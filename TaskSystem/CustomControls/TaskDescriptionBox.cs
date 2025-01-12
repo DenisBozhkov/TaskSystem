@@ -34,6 +34,14 @@ namespace TaskSystem
         public event EventHandler<ManItemEventArgs>? EditItem;
         public event EventHandler<ManItemEventArgs>? DeleteItem;
 
+        public bool CanEdit
+        {
+            get => editButtons.Visible;
+            set => editButtons.Visible = value;
+        }
+
+        public string? TaskAuthor => task?.CreatedBy;
+
         public class ManItemEventArgs(TaskModel task)
         {
             public TaskModel Task { get; set; } = task;

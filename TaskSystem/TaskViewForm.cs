@@ -4,6 +4,8 @@ namespace TaskSystem
 {
     public partial class TaskViewForm : Form
     {
+        private readonly CreateProfileDialog createProfileDialog = new();
+
         public TaskViewForm()
         {
             InitializeComponent();
@@ -29,7 +31,7 @@ namespace TaskSystem
                     Deadline = DateTime.Now.AddDays(-1),
                     IsDone = false,
                     Priority = Priority.NotImportant,
-                    CreatedBy = "user"
+                    CreatedBy = "admin"
                 },
                 new()
                 {
@@ -38,7 +40,7 @@ namespace TaskSystem
                     Deadline = DateTime.Now,
                     IsDone = false,
                     Priority = Priority.LessImportant,
-                    CreatedBy = "user"
+                    CreatedBy = "test123"
                 },
                 new()
                 {
@@ -47,7 +49,7 @@ namespace TaskSystem
                     Deadline = DateTime.Now.AddDays(1),
                     IsDone = false,
                     Priority = Priority.Important,
-                    CreatedBy = "user"
+                    CreatedBy = "admin"
                 },
                 new()
                 {
@@ -56,7 +58,7 @@ namespace TaskSystem
                     Deadline = DateTime.Now.AddDays(-1),
                     IsDone = true,
                     Priority = Priority.VeryImportant,
-                    CreatedBy = "user"
+                    CreatedBy = "test123"
                 },
                 new()
                 {
@@ -65,7 +67,7 @@ namespace TaskSystem
                     Deadline = DateTime.Now.AddDays(1),
                     IsDone = true,
                     Priority = Priority.Urgent,
-                    CreatedBy = "user"
+                    CreatedBy = "admin"
                 }
                 ];
         }
@@ -82,6 +84,51 @@ namespace TaskSystem
         private void taskList_EditItem(object sender, TaskSystem.TaskListBox.ChangeItemEventArgs e)
         {
             MessageBox.Show($"Editing {e.Index}: {e.Item.Title}");
+        }
+
+        private void logInButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (usernameTextBox.Text.Length == 0 || passwordTextBox.Text.Length == 0)
+                    throw new InvalidDataException("Enter both username and password!");
+                ProfileModel profile = new()
+                {
+                    UserName = usernameTextBox.Text,
+                    Password = ProfilesService.HashPassword(passwordTextBox.Text)
+                };
+                if (GlobalService.Profiles.CheckProfilePassword(profile))
+                    LogIn(GlobalService.Profiles.GetProfile(profile.UserName));
+                else throw new InvalidDataException("The username and the password do not match!");
+            }
+            catch (InvalidDataException ex)
+            {
+                MessageBox.Show(ex.Message, "Invalid log in attempt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LogIn(ProfileModel profile)
+        {
+            userLabel.Text = profile.UserName;
+            loggedInPanel.Visible = true;
+            nonLoggedPanel.Visible = false;
+            passwordTextBox.Text = string.Empty;
+            createButton.Visible = true;
+            taskList.SetLoggedInProfile(GlobalService.Profiles.GetProfile(profile.UserName));
+        }
+
+        private void logOutButton_Click(object sender, EventArgs e)
+        {
+            nonLoggedPanel.Visible = true;
+            loggedInPanel.Visible = false;
+            createButton.Visible = false;
+            taskList.SetLoggedInProfile(null);
+        }
+
+        private void registerButton_Click(object sender, EventArgs e)
+        {
+            if (createProfileDialog.ShowDialog(this) == DialogResult.OK && createProfileDialog.Profile != null)
+                GlobalService.Profiles.CreateProfile(createProfileDialog.Profile);
         }
     }
 }

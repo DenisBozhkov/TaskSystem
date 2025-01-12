@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\_ACER\\Desktop\\TaskSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|D:\\_ACER\\Desktop\\TaskSystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\globalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\globalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,16 +38,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TaskViewForm.cs",
               "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
               "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.cs",
               "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
               "RelativeToolTip": "TaskSystem\\TaskViewForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T20:37:50.273Z",
+              "WhenOpened": "2025-01-12T11:22:32.16Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GlobalService.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\GlobalService.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\GlobalService.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\GlobalService.cs",
+              "RelativeToolTip": "TaskSystem\\GlobalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T10:56:06.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

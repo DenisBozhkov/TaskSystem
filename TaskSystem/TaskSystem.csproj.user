@@ -7,6 +7,9 @@
     <Compile Update="CustomControls\TaskListBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="CreateProfileDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TaskViewForm.cs">
       <SubType>Form</SubType>
     </Compile>

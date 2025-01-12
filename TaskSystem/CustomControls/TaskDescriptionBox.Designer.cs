@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tableLayoutPanel1 = new TableLayoutPanel();
+            editButtons = new TableLayoutPanel();
             editButton = new Button();
             deleteButton = new Button();
             label2 = new Label();
             createdByLabel = new Label();
             panel1 = new Panel();
             descriptionLabel = new Label();
-            tableLayoutPanel1.SuspendLayout();
+            editButtons.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // editButtons
             // 
-            tableLayoutPanel1.AutoSize = true;
-            tableLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Controls.Add(editButton, 0, 0);
-            tableLayoutPanel1.Controls.Add(deleteButton, 1, 0);
-            tableLayoutPanel1.Dock = DockStyle.Top;
-            tableLayoutPanel1.Location = new Point(0, 40);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 1;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle());
-            tableLayoutPanel1.Size = new Size(467, 32);
-            tableLayoutPanel1.TabIndex = 0;
+            editButtons.AutoSize = true;
+            editButtons.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            editButtons.ColumnCount = 2;
+            editButtons.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            editButtons.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            editButtons.Controls.Add(editButton, 0, 0);
+            editButtons.Controls.Add(deleteButton, 1, 0);
+            editButtons.Dock = DockStyle.Top;
+            editButtons.Location = new Point(0, 40);
+            editButtons.Name = "editButtons";
+            editButtons.RowCount = 1;
+            editButtons.RowStyles.Add(new RowStyle());
+            editButtons.Size = new Size(467, 32);
+            editButtons.TabIndex = 0;
             // 
             // editButton
             // 
@@ -100,6 +100,7 @@
             createdByLabel.Name = "createdByLabel";
             createdByLabel.Size = new Size(38, 20);
             createdByLabel.TabIndex = 2;
+            createdByLabel.TabStop = true;
             createdByLabel.Text = "User";
             // 
             // panel1
@@ -129,13 +130,13 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BorderStyle = BorderStyle.FixedSingle;
-            Controls.Add(tableLayoutPanel1);
+            Controls.Add(editButtons);
             Controls.Add(descriptionLabel);
             Controls.Add(panel1);
             Name = "TaskDescriptionBox";
             Size = new Size(467, 196);
             Resize += TaskDescriptionBox_Resize;
-            tableLayoutPanel1.ResumeLayout(false);
+            editButtons.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -144,7 +145,7 @@
 
         #endregion
 
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel editButtons;
         private Label label2;
         private Label createdByLabel;
         private Button editButton;
