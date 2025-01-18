@@ -130,5 +130,11 @@ namespace TaskSystem
             if (createProfileDialog.ShowDialog(this) == DialogResult.OK && createProfileDialog.Profile != null)
                 GlobalService.Profiles.CreateProfile(createProfileDialog.Profile);
         }
+
+        private void createButton_Click(object sender, EventArgs e)
+        {
+            TaskForm taskForm = new TaskForm();
+            taskForm.Show();
+        }
     }
 }

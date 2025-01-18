@@ -19,3 +19,33 @@ D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskL
 D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskDescriptionBox.resources
 D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.sourcelink.json
 D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.CreateProfileDIalog.resources
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\TaskSystem.exe
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\TaskSystem.deps.json
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\TaskSystem.runtimeconfig.json
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\TaskSystem.dll
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\TaskSystem.pdb
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.CreateProfileDialog.resources
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskDescriptionBox.resources
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskListBox.resources
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskVisualBox.resources
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskViewForm.resources
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.csproj.GenerateResource.cache
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.AssemblyInfoInputs.cache
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.AssemblyInfo.cs
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.csproj.CoreCompileInputs.cache
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.sourcelink.json
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.dll
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\refint\TaskSystem.dll
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.pdb
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.genruntimeconfig.cache
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\ref\TaskSystem.dll
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskForm.resources
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.csproj.AssemblyReference.cache
+C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.csproj.Up2Date
