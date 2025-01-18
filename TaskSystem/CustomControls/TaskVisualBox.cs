@@ -38,14 +38,14 @@ namespace TaskSystem
                     importancyLabel.ForeColor = Color.Red;
                     break;
             }
-            deadlineLabel.Text = task.Deadline.ToString("f");
+            deadlineLabel.Text = task.Deadline.ToString("D");
             titleLabel.Text = task.Title;
             if (task.IsDone)
             {
                 statusLabel.Text = "Done";
                 statusLabel.BackColor = Color.Green;
             }
-            else if (task.Deadline >= DateTime.Now)
+            else if (task.Deadline >= DateTime.Now.Date)
             {
                 statusLabel.Text = "Waiting";
                 statusLabel.BackColor = Color.Blue;

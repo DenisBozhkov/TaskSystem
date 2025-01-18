@@ -22,7 +22,7 @@ namespace TaskSystem
                     throw new InvalidDataException("Please, enter a password!");
                 if (emailTextBox.Text.Length == 0)
                     throw new InvalidDataException("Please, enter an e-mail address!");
-                if (GlobalService.Profiles.GetProfile(usernameTextBox.Text) != null)
+                if (ProfilesService.GetProfile(usernameTextBox.Text) != null)
                     throw new InvalidDataException($"The user \"{usernameTextBox.Text}\" already exists!");
                 profile = new()
                 {

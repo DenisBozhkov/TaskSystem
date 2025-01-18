@@ -41,9 +41,9 @@
             // 
             tableLayoutPanel1.ColumnCount = 5;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 130F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.34F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.33F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 36F));
             tableLayoutPanel1.Controls.Add(importancyLabel, 0, 0);
             tableLayoutPanel1.Controls.Add(descriptionButton, 4, 0);
@@ -87,10 +87,10 @@
             // 
             statusLabel.BorderStyle = BorderStyle.FixedSingle;
             statusLabel.Dock = DockStyle.Fill;
-            statusLabel.Location = new Point(525, 0);
+            statusLabel.Location = new Point(604, 0);
             statusLabel.Margin = new Padding(0);
             statusLabel.Name = "statusLabel";
-            statusLabel.Size = new Size(197, 36);
+            statusLabel.Size = new Size(118, 36);
             statusLabel.TabIndex = 6;
             statusLabel.Text = "Status";
             statusLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -99,10 +99,10 @@
             // 
             titleLabel.BorderStyle = BorderStyle.FixedSingle;
             titleLabel.Dock = DockStyle.Fill;
-            titleLabel.Location = new Point(327, 0);
+            titleLabel.Location = new Point(248, 0);
             titleLabel.Margin = new Padding(0);
             titleLabel.Name = "titleLabel";
-            titleLabel.Size = new Size(198, 36);
+            titleLabel.Size = new Size(356, 36);
             titleLabel.TabIndex = 1;
             titleLabel.Text = "Title";
             titleLabel.TextAlign = ContentAlignment.MiddleCenter;
@@ -114,7 +114,7 @@
             deadlineLabel.Location = new Point(130, 0);
             deadlineLabel.Margin = new Padding(0);
             deadlineLabel.Name = "deadlineLabel";
-            deadlineLabel.Size = new Size(197, 36);
+            deadlineLabel.Size = new Size(118, 36);
             deadlineLabel.TabIndex = 0;
             deadlineLabel.Text = "Deadline";
             deadlineLabel.TextAlign = ContentAlignment.MiddleLeft;

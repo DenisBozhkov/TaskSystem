@@ -49,3 +49,13 @@ C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\unix\lib
 C:\Simple Maths\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
 C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.csproj.AssemblyReference.cache
 C:\Simple Maths\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.csproj.Up2Date
+D:\_ACER\Desktop\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+D:\_ACER\Desktop\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+D:\_ACER\Desktop\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+D:\_ACER\Desktop\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+D:\_ACER\Desktop\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\_ACER\Desktop\TaskSystem\TaskSystem\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.csproj.AssemblyReference.cache
+D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.TaskForm.resources
+D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.csproj.Up2Date
+D:\_ACER\Desktop\TaskSystem\TaskSystem\obj\Debug\net8.0-windows\TaskSystem.ScheduleForm.resources

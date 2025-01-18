@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,25 +10,42 @@ using TaskSystem.Models;
 
 namespace TaskSystem
 {
-    public class ProfilesService
+    public static class ProfilesService
     {
-        private readonly List<ProfileModel> profiles = [];
-        public ProfilesService() 
-        {
-            profiles.Add(new() { UserName = "test123", Password = HashPassword("test123"), Email = "test123@test.com" });
-            profiles.Add(new() { UserName = "admin", Password = HashPassword("admin"), Email = "admin@test.com" });
-        }
-        public void CreateProfile(ProfileModel profile)
+        public static void CreateProfile(ProfileModel profile)
         {
             if (GetProfile(profile.UserName) != null)
                 throw new InvalidDataException("The username is already is used by another profile!");
-            profiles.Add(profile);
+            SqlConnection con = new(GlobalService.DbConnectionString);
+            con.Open();
+            SqlCommand comm = con.CreateCommand();
+            comm.CommandText = "INSERT INTO Profiles VALUES(@UserName,@Password,@Email)";
+            comm.Parameters.AddWithValue("@UserName", profile.UserName);
+            comm.Parameters.AddWithValue("@Password", profile.Password);
+            comm.Parameters.AddWithValue("@Email", profile.Email);
+            comm.ExecuteNonQuery();
+            con.Close();
         }
-        public ProfileModel? GetProfile(string userName)
+        public static ProfileModel? GetProfile(string userName)
         {
-            return profiles.Find(x => x.UserName == userName);
+            ProfileModel? profile = null;
+            SqlConnection con =new(GlobalService.DbConnectionString);
+            con.Open();
+            SqlCommand command = con.CreateCommand();
+            command.CommandText = "SELECT * FROM Profiles WHERE UserName=@UserName";
+            command.Parameters.AddWithValue("@UserName", userName);
+            var reader = command.ExecuteReader();
+            if (reader.Read())
+                profile = new()
+                {
+                    UserName = userName,
+                    Password = (byte[])reader["Password"],
+                    Email = (string)reader["Email"]
+                };
+            con.Close();
+            return profile;
         }
-        public bool CheckProfilePassword(ProfileModel profile)
+        public static bool CheckProfilePassword(ProfileModel profile)
         {
             ProfileModel dbProfile = GetProfile(profile.UserName) ?? throw new InvalidDataException("There is no profile with the given username!");
             return profile.Password.SequenceEqual(dbProfile.Password);

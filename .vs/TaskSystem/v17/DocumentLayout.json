@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Simple Maths\\TaskSystem\\",
+  "WorkspaceRootPath": "D:\\_ACER\\Desktop\\TaskSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|c:\\simple maths\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|c:\\simple maths\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|c:\\simple maths\\tasksystem\\tasksystem\\taskform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|c:\\simple maths\\tasksystem\\tasksystem\\taskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|c:\\simple maths\\tasksystem\\tasksystem\\taskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|c:\\simple maths\\tasksystem\\tasksystem\\globalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\globalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,79 +42,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TaskForm.Designer.cs",
-              "DocumentMoniker": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskForm.Designer.cs",
-              "RelativeDocumentMoniker": "TaskSystem\\TaskForm.Designer.cs",
-              "ToolTip": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskForm.Designer.cs",
-              "RelativeToolTip": "TaskSystem\\TaskForm.Designer.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "ScheduleForm.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\ScheduleForm.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\ScheduleForm.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\ScheduleForm.cs",
+              "RelativeToolTip": "TaskSystem\\ScheduleForm.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAhwBoAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T14:52:44.3Z",
+              "WhenOpened": "2025-01-18T22:26:53.358Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TaskForm.cs [Design]",
-              "DocumentMoniker": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskForm.cs",
-              "RelativeDocumentMoniker": "TaskSystem\\TaskForm.cs",
-              "ToolTip": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskForm.cs [Design]",
-              "RelativeToolTip": "TaskSystem\\TaskForm.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "ScheduleForm.cs [Design]",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\ScheduleForm.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\ScheduleForm.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\ScheduleForm.cs [Design]",
+              "RelativeToolTip": "TaskSystem\\ScheduleForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T14:52:38.641Z",
+              "WhenOpened": "2025-01-18T22:16:12.204Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TaskForm.cs",
-              "DocumentMoniker": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskForm.cs",
-              "RelativeDocumentMoniker": "TaskSystem\\TaskForm.cs",
-              "ToolTip": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskForm.cs",
-              "RelativeToolTip": "TaskSystem\\TaskForm.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACMAAAAiAAAA",
+              "DocumentIndex": 3,
+              "Title": "TasksService.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TasksService.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\TasksService.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TasksService.cs",
+              "RelativeToolTip": "TaskSystem\\TasksService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T14:49:50.023Z",
+              "WhenOpened": "2025-01-18T21:36:30.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TaskViewForm.cs [Design]",
-              "DocumentMoniker": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
-              "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.cs",
-              "ToolTip": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskViewForm.cs [Design]",
-              "RelativeToolTip": "TaskSystem\\TaskViewForm.cs [Design]",
+              "Title": "TaskViewForm.Designer.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.Designer.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.Designer.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.Designer.cs",
+              "RelativeToolTip": "TaskSystem\\TaskViewForm.Designer.cs",
+              "ViewState": "AgIAAEEBAAAAAAAAAAAQwGIBAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T21:09:06.851Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-18T21:09:59.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskViewForm.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
+              "RelativeToolTip": "TaskSystem\\TaskViewForm.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAADgv0sAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T21:09:52.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TaskViewForm.cs",
-              "DocumentMoniker": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
+              "Title": "TaskViewForm.cs [Design]",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
               "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.cs",
-              "ToolTip": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
-              "RelativeToolTip": "TaskSystem\\TaskViewForm.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAD4v4gAAAAcAAAA",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs [Design]",
+              "RelativeToolTip": "TaskSystem\\TaskViewForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T11:22:32.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GlobalService.cs",
-              "DocumentMoniker": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\GlobalService.cs",
-              "RelativeDocumentMoniker": "TaskSystem\\GlobalService.cs",
-              "ToolTip": "C:\\Simple Maths\\TaskSystem\\TaskSystem\\GlobalService.cs",
-              "RelativeToolTip": "TaskSystem\\GlobalService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T10:56:06.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T20:55:50.891Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

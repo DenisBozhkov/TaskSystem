@@ -1,3 +1,4 @@
+using System.Data.SqlClient;
 using TaskSystem.Models;
 
 namespace TaskSystem
@@ -9,81 +10,30 @@ namespace TaskSystem
         public TaskViewForm()
         {
             InitializeComponent();
-            taskList.Rebind(GetTestData());
-            // taskList е потребителска контрола.
-            // Методът Rebind() попълва taskList с List<TaskModel>, елементите на който да се визуализират.
-            // Засега той трябва да се извиква с подходящ параметър всеки път,
-            // когато се променя съдържанието или подредбата на елементите на контролата.
-            //
-            // Когато стартираш програмата, ще видиш, че в контролата на всеки ред има един '+' накрая.
-            // При натискането му ще се покажат описанието на задачата, кой я е добавил и бутоните "Edit" и "Delete".
+            taskList.Rebind(TasksService.Tasks);
         }
 
-        // Метод, който генерира тестови данни.
-        // Ще бъде премахнат, след като имплементираме базата данни.
-        static List<TaskModel> GetTestData()
-        {
-            return [
-                new()
-                {
-                    Title = "Test task 1",
-                    Description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-                    Deadline = DateTime.Now.AddDays(-1),
-                    IsDone = false,
-                    Priority = Priority.NotImportant,
-                    CreatedBy = "admin"
-                },
-                new()
-                {
-                    Title = "Test task 2",
-                    Description = "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-                    Deadline = DateTime.Now,
-                    IsDone = false,
-                    Priority = Priority.LessImportant,
-                    CreatedBy = "test123"
-                },
-                new()
-                {
-                    Title = "Test task 3",
-                    Description = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-                    Deadline = DateTime.Now.AddDays(1),
-                    IsDone = false,
-                    Priority = Priority.Important,
-                    CreatedBy = "admin"
-                },
-                new()
-                {
-                    Title = "Test task 4",
-                    Description = "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-                    Deadline = DateTime.Now.AddDays(-1),
-                    IsDone = true,
-                    Priority = Priority.VeryImportant,
-                    CreatedBy = "test123"
-                },
-                new()
-                {
-                    Title = "Test task 5",
-                    Description = "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-                    Deadline = DateTime.Now.AddDays(1),
-                    IsDone = true,
-                    Priority = Priority.Urgent,
-                    CreatedBy = "admin"
-                }
-                ];
-        }
-
-        // Контролата има и 2 потребителски събития: EditItem и DeleteItem,
-        // които се извикват при натискането на съответните бутони. В обекта 'e'
-        // се съхранява кой запис ще бъде засегнат (стойство Task), както и на кой индекс е в списъка
-        // (ствойство Index, добавил съм го само в случай че нещо се обърка със свойството Task).
         private void taskList_DeleteItem(object sender, TaskSystem.TaskListBox.ChangeItemEventArgs e)
         {
-            MessageBox.Show($"Deleting {e.Index}: {e.Item.Title}");
+            if (MessageBox.Show("Deleted tasks cannot be recovered! Are you sure you want to delete this task?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                SqlConnection conn = new(GlobalService.DbConnectionString);
+                conn.Open();
+                SqlCommand comm = conn.CreateCommand();
+                comm.CommandText = "DELETE FROM Tasks WHERE Id=@Id";
+                comm.Parameters.AddWithValue("@Id", e.Item.Id);
+                comm.ExecuteNonQuery();
+                conn.Close();
+                taskList.Rebind(TasksService.Tasks);
+            }
         }
 
         private void taskList_EditItem(object sender, TaskSystem.TaskListBox.ChangeItemEventArgs e)
         {
-            MessageBox.Show($"Editing {e.Index}: {e.Item.Title}");
+            TaskForm taskForm = new();
+            taskForm.Task = e.Item;
+            if (taskForm.ShowDialog(this) == DialogResult.OK)
+                taskList.Rebind(TasksService.Tasks);
         }
 
         private void logInButton_Click(object sender, EventArgs e)
@@ -97,8 +47,8 @@ namespace TaskSystem
                     UserName = usernameTextBox.Text,
                     Password = ProfilesService.HashPassword(passwordTextBox.Text)
                 };
-                if (GlobalService.Profiles.CheckProfilePassword(profile))
-                    LogIn(GlobalService.Profiles.GetProfile(profile.UserName));
+                if (ProfilesService.CheckProfilePassword(profile))
+                    LogIn(ProfilesService.GetProfile(profile.UserName));
                 else throw new InvalidDataException("The username and the password do not match!");
             }
             catch (InvalidDataException ex)
@@ -114,7 +64,8 @@ namespace TaskSystem
             nonLoggedPanel.Visible = false;
             passwordTextBox.Text = string.Empty;
             createButton.Visible = true;
-            taskList.SetLoggedInProfile(GlobalService.Profiles.GetProfile(profile.UserName));
+            scheduleButton.Visible = true;
+            taskList.SetLoggedInProfile(ProfilesService.GetProfile(profile.UserName));
         }
 
         private void logOutButton_Click(object sender, EventArgs e)
@@ -122,19 +73,86 @@ namespace TaskSystem
             nonLoggedPanel.Visible = true;
             loggedInPanel.Visible = false;
             createButton.Visible = false;
+            scheduleButton.Visible = false;
             taskList.SetLoggedInProfile(null);
         }
 
         private void registerButton_Click(object sender, EventArgs e)
         {
             if (createProfileDialog.ShowDialog(this) == DialogResult.OK && createProfileDialog.Profile != null)
-                GlobalService.Profiles.CreateProfile(createProfileDialog.Profile);
+                ProfilesService.CreateProfile(createProfileDialog.Profile);
         }
 
         private void createButton_Click(object sender, EventArgs e)
         {
-            TaskForm taskForm = new TaskForm();
-            taskForm.Show();
+            TaskForm taskForm = new();
+            if (taskForm.ShowDialog(this) == DialogResult.OK)
+                taskList.Rebind(TasksService.Tasks);
+        }
+
+        private void startDateCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            startDatePicker.Enabled = startDateCheckBox.Checked;
+        }
+
+        private void endDateCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            endDatePicker.Enabled = endDateCheckbox.Checked;
+        }
+
+        private void filterButton_Click(object sender, EventArgs e)
+        {
+            if (filterButton.Font.Bold)
+            {
+                splitContainer1.Panel1Collapsed = true;
+                filterButton.Font = new Font(filterButton.Font, FontStyle.Regular);
+            }
+            else
+            {
+                splitContainer1.Panel1Collapsed = false;
+                filterButton.Font = new Font(filterButton.Font, FontStyle.Bold);
+            }
+        }
+
+        private void orderByPriorirtyButton_Click(object sender, EventArgs e)
+        {
+            if (orderByPriorirtyButton.Font.Bold)
+            {
+                TasksService.OrderByPriority = false;
+                orderByPriorirtyButton.Font = new Font(orderByPriorirtyButton.Font, FontStyle.Regular);
+            }
+            else
+            {
+                TasksService.OrderByPriority = true;
+                orderByPriorirtyButton.Font = new Font(orderByPriorirtyButton.Font, FontStyle.Bold);
+            }
+            taskList.Rebind(TasksService.Tasks);
+        }
+
+        private void goFilterButton_Click(object sender, EventArgs e)
+        {
+            if (startDateCheckBox.Checked)
+                TasksService.StartAfter = startDatePicker.Value;
+            else TasksService.StartAfter = null;
+            if (endDateCheckbox.Checked)
+                TasksService.EndBefore = endDatePicker.Value;
+            else TasksService.EndBefore = null;
+            taskList.Rebind(TasksService.Tasks);
+        }
+
+        private void clearFilterButton_Click(object sender, EventArgs e)
+        {
+            startDateCheckBox.Checked = false;
+            endDateCheckbox.Checked = false;
+            startDatePicker.Value = endDatePicker.Value = DateTime.Now;
+            TasksService.StartAfter = null;
+            TasksService.EndBefore = null;
+            taskList.Rebind(TasksService.Tasks);
+        }
+
+        private void scheduleButton_Click(object sender, EventArgs e)
+        {
+            new ScheduleForm().ShowDialog(this);
         }
     }
 }

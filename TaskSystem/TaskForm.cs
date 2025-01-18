@@ -1,18 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Net.Http.Headers;
-using Microsoft.VisualBasic;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+﻿using System.Data.SqlClient;
+using TaskSystem.Models;
 namespace TaskSystem
 {
     public partial class TaskForm : Form
@@ -21,20 +8,50 @@ namespace TaskSystem
         {
             InitializeComponent();
         }
-   
+        public TaskModel? Task { get; set; }
         private void button1_Click_1(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-2U4DRLK;Initial Catalog=Tasks;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
+            SqlConnection con = new SqlConnection(GlobalService.DbConnectionString);
             con.Open();
-            string insertQuery = "INSERT INTO Tasks VALUES (@Title, @Description, @Deadline, @Priority, @CreatedBy)";
-            SqlCommand cmd = new SqlCommand(insertQuery, con);
-            cmd.Parameters.AddWithValue("@Title", txtTitle.Text);
-            cmd.Parameters.AddWithValue("@Description", txtDescription.Text);
-            cmd.Parameters.AddWithValue("@Deadline", dtpDeadline.Value);
-            cmd.Parameters.AddWithValue("@Priority", cmbPriority.SelectedItem.ToString());
-            cmd.Parameters.AddWithValue("@CreatedBy", txtCreator.Text);
-            cmd.ExecuteNonQuery();
+            if (Task == null)
+            {
+                string insertQuery = "INSERT INTO Tasks(Title,Description,Deadline,Priority,CreatedBy) VALUES (@Title, @Description, @Deadline, @Priority, @CreatedBy)";
+                SqlCommand cmd = new SqlCommand(insertQuery, con);
+                cmd.Parameters.AddWithValue("@Title", txtTitle.Text);
+                cmd.Parameters.AddWithValue("@Description", txtDescription.Text);
+                cmd.Parameters.AddWithValue("@Deadline", dtpDeadline.Value);
+                cmd.Parameters.AddWithValue("@Priority", cmbPriority.SelectedIndex);
+                cmd.Parameters.AddWithValue("@CreatedBy", GlobalService.LoggedInProfile?.UserName);
+                cmd.ExecuteNonQuery();
+            }
+            else
+            {
+                string updateQuery = "UPDATE Tasks SET Title=@Title,Description=@Description,Deadline=@Deadline,Priority=@Priority,IsDone=@IsDone WHERE Id=@Id";
+                SqlCommand cmd = new SqlCommand(updateQuery, con);
+                cmd.Parameters.AddWithValue("@Title", txtTitle.Text);
+                cmd.Parameters.AddWithValue("@Description", txtDescription.Text);
+                cmd.Parameters.AddWithValue("@Deadline", dtpDeadline.Value);
+                cmd.Parameters.AddWithValue("@Priority", cmbPriority.SelectedIndex);
+                cmd.Parameters.AddWithValue("@IsDone", cbIsDone.Checked);
+                cmd.Parameters.AddWithValue("@Id", Task.Id);
+                cmd.ExecuteNonQuery();
+            }
+            con.Close();
             Close();
+        }
+
+        private void TaskForm_Shown(object sender, EventArgs e)
+        {
+            if (Task != null)
+            {
+                txtTitle.Text = Task.Title;
+                txtDescription.Text = Task.Description;
+                dtpDeadline.Value = Task.Deadline;
+                cmbPriority.SelectedIndex = (int)Task.Priority;
+                cbIsDone.Checked = Task.IsDone;
+                cbIsDone.Visible = true;
+            }
+            else cbIsDone.Visible = false;
         }
     }
 }

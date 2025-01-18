@@ -13,6 +13,7 @@ namespace TaskSystem
         public void SetLoggedInProfile(ProfileModel? profile)
         {
             loggedInProfile = profile;
+            GlobalService.LoggedInProfile = profile;
             foreach(Control control in Controls)
                 if(control is TaskDescriptionBox descriptionBox)
                     descriptionBox.CanEdit = descriptionBox.TaskAuthor?.CompareTo(profile?.UserName) == 0;
@@ -22,7 +23,7 @@ namespace TaskSystem
         {
             TaskVisualBox box;
             TaskDescriptionBox description;
-            Controls.Clear();
+            List<Control> controls = [];
             for(int i=tasks.Count-1; i>=0;i--)
             {
                 description = new(tasks[i])
@@ -43,9 +44,11 @@ namespace TaskSystem
                 description.DeleteItem += Description_DeleteItem;
                 box.CollapseDescription += Box_CollapseDescription;
                 box.ExpandDescription += Box_ExpandDescription;
-                Controls.Add(description);
-                Controls.Add(box);
+                controls.Add(description);
+                controls.Add(box);
             }
+            Controls.Clear();
+            Controls.AddRange([.. controls]);
         }
 
         private void Description_DeleteItem(object? sender, TaskDescriptionBox.ManItemEventArgs e)
