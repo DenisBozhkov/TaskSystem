@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "D:\\_ACER\\Desktop\\TaskSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\customcontrols\\taskvisualbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\customcontrols\\taskvisualbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\customcontrols\\taskvisualbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\customcontrols\\taskvisualbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\customcontrols\\tasklistbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\customcontrols\\tasklistbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\taskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\taskform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\tasksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\customcontrols\\tasklistbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\customcontrols\\tasklistbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\scheduleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|d:\\_acer\\desktop\\tasksystem\\tasksystem\\customcontrols\\taskvisualbox.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E54BDFD9-BA4A-420D-93C1-12BFBFD4EF99}|TaskSystem\\TaskSystem.csproj|solutionrelative:tasksystem\\customcontrols\\taskvisualbox.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,49 +50,38 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ScheduleForm.cs",
-              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\ScheduleForm.cs",
-              "RelativeDocumentMoniker": "TaskSystem\\ScheduleForm.cs",
-              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\ScheduleForm.cs",
-              "RelativeToolTip": "TaskSystem\\ScheduleForm.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAhwBoAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "TaskVisualBox.Designer.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskVisualBox.Designer.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\CustomControls\\TaskVisualBox.Designer.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskVisualBox.Designer.cs*",
+              "RelativeToolTip": "TaskSystem\\CustomControls\\TaskVisualBox.Designer.cs*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T22:26:53.358Z",
+              "WhenOpened": "2025-01-19T12:49:25.236Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ScheduleForm.cs [Design]",
-              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\ScheduleForm.cs",
-              "RelativeDocumentMoniker": "TaskSystem\\ScheduleForm.cs",
-              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\ScheduleForm.cs [Design]",
-              "RelativeToolTip": "TaskSystem\\ScheduleForm.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "TaskVisualBox.cs [Design]",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskVisualBox.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\CustomControls\\TaskVisualBox.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskVisualBox.cs [Design]*",
+              "RelativeToolTip": "TaskSystem\\CustomControls\\TaskVisualBox.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T22:16:12.204Z",
+              "WhenOpened": "2025-01-19T12:45:44.409Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TasksService.cs",
-              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TasksService.cs",
-              "RelativeDocumentMoniker": "TaskSystem\\TasksService.cs",
-              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TasksService.cs",
-              "RelativeToolTip": "TaskSystem\\TasksService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T21:36:30.914Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -86,34 +91,98 @@
               "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.Designer.cs",
               "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.Designer.cs*",
               "RelativeToolTip": "TaskSystem\\TaskViewForm.Designer.cs*",
-              "ViewState": "AgIAAEABAAAAAAAAAAAQwGEBAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwLwBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T21:09:59.518Z",
+              "WhenOpened": "2025-01-19T13:59:28.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TaskVisualBox.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskVisualBox.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\CustomControls\\TaskVisualBox.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskVisualBox.cs*",
+              "RelativeToolTip": "TaskSystem\\CustomControls\\TaskVisualBox.cs*",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAAEIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T13:52:03.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TaskViewForm.cs",
               "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
               "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.cs",
               "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs*",
               "RelativeToolTip": "TaskSystem\\TaskViewForm.cs*",
-              "ViewState": "AgIAAC0AAAAAAAAAAADgv0sAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwKgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T21:09:52.429Z",
+              "WhenOpened": "2025-01-19T13:44:08.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "TaskViewForm.cs [Design]",
               "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs",
               "RelativeDocumentMoniker": "TaskSystem\\TaskViewForm.cs",
               "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskViewForm.cs [Design]*",
               "RelativeToolTip": "TaskSystem\\TaskViewForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T20:55:50.891Z",
+              "WhenOpened": "2025-01-19T13:44:03.662Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TasksService.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TasksService.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\TasksService.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TasksService.cs",
+              "RelativeToolTip": "TaskSystem\\TasksService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwEkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T13:26:48.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskForm.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskForm.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\TaskForm.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\TaskForm.cs",
+              "RelativeToolTip": "TaskSystem\\TaskForm.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAqwDgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T13:25:37.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TaskListBox.cs",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskListBox.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\CustomControls\\TaskListBox.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskListBox.cs",
+              "RelativeToolTip": "TaskSystem\\CustomControls\\TaskListBox.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAEwEAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T13:14:36.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaskListBox.cs [Design]",
+              "DocumentMoniker": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskListBox.cs",
+              "RelativeDocumentMoniker": "TaskSystem\\CustomControls\\TaskListBox.cs",
+              "ToolTip": "D:\\_ACER\\Desktop\\TaskSystem\\TaskSystem\\CustomControls\\TaskListBox.cs [Design]",
+              "RelativeToolTip": "TaskSystem\\CustomControls\\TaskListBox.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T13:14:35.049Z",
               "EditorCaption": " [Design]"
             }
           ]

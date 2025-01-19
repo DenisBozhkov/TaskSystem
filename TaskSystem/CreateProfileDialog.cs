@@ -24,6 +24,8 @@ namespace TaskSystem
                     throw new InvalidDataException("Please, enter an e-mail address!");
                 if (ProfilesService.GetProfile(usernameTextBox.Text) != null)
                     throw new InvalidDataException($"The user \"{usernameTextBox.Text}\" already exists!");
+                if (!passwordTextBox.Text.Equals(confirmPasswordTextBox.Text))
+                    throw new InvalidDataException("The passwords does not match!");
                 profile = new()
                 {
                     UserName = usernameTextBox.Text,
@@ -33,7 +35,7 @@ namespace TaskSystem
                 DialogResult = DialogResult.OK;
                 Close();
             }
-            catch(InvalidDataException ex)
+            catch (InvalidDataException ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -43,6 +45,11 @@ namespace TaskSystem
         {
             profile = null;
             Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

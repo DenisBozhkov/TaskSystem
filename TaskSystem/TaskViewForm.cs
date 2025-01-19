@@ -1,4 +1,4 @@
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using TaskSystem.Models;
 
 namespace TaskSystem
@@ -30,8 +30,10 @@ namespace TaskSystem
 
         private void taskList_EditItem(object sender, TaskSystem.TaskListBox.ChangeItemEventArgs e)
         {
-            TaskForm taskForm = new();
-            taskForm.Task = e.Item;
+            TaskForm taskForm = new()
+            {
+                Task = e.Item
+            };
             if (taskForm.ShowDialog(this) == DialogResult.OK)
                 taskList.Rebind(TasksService.Tasks);
         }
@@ -153,6 +155,29 @@ namespace TaskSystem
         private void scheduleButton_Click(object sender, EventArgs e)
         {
             new ScheduleForm().ShowDialog(this);
+        }
+
+        private void taskListBox1_SwitchStatus(object sender, TaskSystem.TaskListBox.ChangeItemEventArgs e)
+        {
+            SqlConnection conn = new(GlobalService.DbConnectionString);
+            conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = "UPDATE Tasks SET IsDone=@IsDone WHERE Id=@Id";
+            cmd.Parameters.AddWithValue("@IsDone", !e.Item.IsDone);
+            cmd.Parameters.AddWithValue("@Id", e.Item.Id);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            taskList.Rebind(TasksService.Tasks);
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
         }
     }
 }

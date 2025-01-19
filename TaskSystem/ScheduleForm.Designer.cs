@@ -32,7 +32,13 @@
             taskListBox1 = new TaskListBox();
             tableLayoutPanel1 = new TableLayoutPanel();
             closeButton = new Button();
+            panel1 = new Panel();
+            checkBox1 = new CheckBox();
+            dateTimePicker1 = new DateTimePicker();
+            label2 = new Label();
+            statusLabel = new Label();
             tableLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -43,7 +49,7 @@
             label1.Name = "label1";
             label1.Size = new Size(884, 51);
             label1.TabIndex = 0;
-            label1.Text = "Today's schedule";
+            label1.Text = "Schedule";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // taskListBox1
@@ -51,9 +57,9 @@
             taskListBox1.AutoScroll = true;
             taskListBox1.BorderStyle = BorderStyle.Fixed3D;
             taskListBox1.Dock = DockStyle.Fill;
-            taskListBox1.Location = new Point(0, 51);
+            taskListBox1.Location = new Point(0, 121);
             taskListBox1.Name = "taskListBox1";
-            taskListBox1.Size = new Size(884, 443);
+            taskListBox1.Size = new Size(884, 373);
             taskListBox1.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -81,18 +87,74 @@
             closeButton.UseVisualStyleBackColor = true;
             closeButton.Click += closeButton_Click;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(checkBox1);
+            panel1.Controls.Add(dateTimePicker1);
+            panel1.Controls.Add(label2);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 51);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(884, 29);
+            panel1.TabIndex = 4;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Dock = DockStyle.Right;
+            checkBox1.Location = new Point(641, 0);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(243, 29);
+            checkBox1.TabIndex = 2;
+            checkBox1.Text = "Show only logged in user's tasks";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Dock = DockStyle.Left;
+            dateTimePicker1.Location = new Point(44, 0);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.TabIndex = 1;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
+            // label2
+            // 
+            label2.Dock = DockStyle.Left;
+            label2.Location = new Point(0, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(44, 29);
+            label2.TabIndex = 0;
+            label2.Text = "Date:";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // statusLabel
+            // 
+            statusLabel.Dock = DockStyle.Top;
+            statusLabel.Location = new Point(0, 80);
+            statusLabel.Name = "statusLabel";
+            statusLabel.Size = new Size(884, 41);
+            statusLabel.TabIndex = 5;
+            statusLabel.Text = "Status label";
+            statusLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // ScheduleForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(884, 530);
             Controls.Add(taskListBox1);
+            Controls.Add(statusLabel);
+            Controls.Add(panel1);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(label1);
             Name = "ScheduleForm";
             Text = "Schedule";
             Load += ScheduleForm_Load;
             tableLayoutPanel1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -102,5 +164,10 @@
         private TaskListBox taskListBox1;
         private TableLayoutPanel tableLayoutPanel1;
         private Button closeButton;
+        private Panel panel1;
+        private CheckBox checkBox1;
+        private DateTimePicker dateTimePicker1;
+        private Label label2;
+        private Label statusLabel;
     }
 }

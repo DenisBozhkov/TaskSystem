@@ -60,6 +60,7 @@
             // 
             // importancyLabel
             // 
+            importancyLabel.BackColor = Color.Transparent;
             importancyLabel.BorderStyle = BorderStyle.FixedSingle;
             importancyLabel.Dock = DockStyle.Fill;
             importancyLabel.Location = new Point(0, 0);
@@ -72,7 +73,10 @@
             // 
             // descriptionButton
             // 
+            descriptionButton.BackColor = Color.Transparent;
+            descriptionButton.Cursor = Cursors.Hand;
             descriptionButton.Dock = DockStyle.Fill;
+            descriptionButton.FlatAppearance.BorderColor = SystemColors.WindowFrame;
             descriptionButton.FlatStyle = FlatStyle.Flat;
             descriptionButton.Location = new Point(722, 0);
             descriptionButton.Margin = new Padding(0);
@@ -80,11 +84,12 @@
             descriptionButton.Size = new Size(38, 36);
             descriptionButton.TabIndex = 0;
             descriptionButton.Text = "+";
-            descriptionButton.UseVisualStyleBackColor = true;
+            descriptionButton.UseVisualStyleBackColor = false;
             descriptionButton.Click += descriptionButton_Click;
             // 
             // statusLabel
             // 
+            statusLabel.BackColor = Color.Transparent;
             statusLabel.BorderStyle = BorderStyle.FixedSingle;
             statusLabel.Dock = DockStyle.Fill;
             statusLabel.Location = new Point(604, 0);
@@ -97,6 +102,7 @@
             // 
             // titleLabel
             // 
+            titleLabel.BackColor = Color.Transparent;
             titleLabel.BorderStyle = BorderStyle.FixedSingle;
             titleLabel.Dock = DockStyle.Fill;
             titleLabel.Location = new Point(248, 0);
@@ -109,6 +115,7 @@
             // 
             // deadlineLabel
             // 
+            deadlineLabel.BackColor = Color.Transparent;
             deadlineLabel.BorderStyle = BorderStyle.FixedSingle;
             deadlineLabel.Dock = DockStyle.Fill;
             deadlineLabel.Location = new Point(130, 0);

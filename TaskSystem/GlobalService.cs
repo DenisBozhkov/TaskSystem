@@ -1,4 +1,4 @@
-﻿using System.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using TaskSystem.Models;
 
 namespace TaskSystem
@@ -21,7 +21,7 @@ namespace TaskSystem
             catch (Exception)
             {
                 comm = conn.CreateCommand();
-                comm.CommandText = "CREATE DATABASE Tasks";
+                comm.CommandText = "CREATE DATABASE Tasks COLLATE Cyrillic_General_CI_AS";
                 comm.ExecuteNonQuery();
 
                 comm = conn.CreateCommand();

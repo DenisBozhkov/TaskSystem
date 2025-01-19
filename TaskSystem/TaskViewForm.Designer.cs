@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            taskList = new TaskListBox();
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             createButton = new Button();
             panel1 = new Panel();
@@ -53,8 +53,10 @@
             startDateCheckBox = new CheckBox();
             endDatePicker = new DateTimePicker();
             endDateCheckbox = new CheckBox();
-            goFilterButton = new Button();
             clearFilterButton = new Button();
+            goFilterButton = new Button();
+            taskList = new TaskListBox();
+            toolTip1 = new ToolTip(components);
             panel1.SuspendLayout();
             nonLoggedPanel.SuspendLayout();
             loggedInPanel.SuspendLayout();
@@ -65,18 +67,6 @@
             splitContainer1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // taskList
-            // 
-            taskList.AutoScroll = true;
-            taskList.BorderStyle = BorderStyle.Fixed3D;
-            taskList.Dock = DockStyle.Fill;
-            taskList.Location = new Point(0, 0);
-            taskList.Name = "taskList";
-            taskList.Size = new Size(1097, 369);
-            taskList.TabIndex = 6;
-            taskList.EditItem += taskList_EditItem;
-            taskList.DeleteItem += taskList_DeleteItem;
             // 
             // label1
             // 
@@ -295,7 +285,7 @@
             scheduleButton.Name = "scheduleButton";
             scheduleButton.Size = new Size(109, 48);
             scheduleButton.TabIndex = 8;
-            scheduleButton.Text = "Today's schedule";
+            scheduleButton.Text = "Schedule";
             scheduleButton.UseVisualStyleBackColor = true;
             scheduleButton.Visible = false;
             scheduleButton.Click += scheduleButton_Click;
@@ -323,20 +313,21 @@
             // 
             // tableLayoutPanel2
             // 
-            tableLayoutPanel2.ColumnCount = 7;
+            tableLayoutPanel2.ColumnCount = 8;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 240F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 240F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle());
             tableLayoutPanel2.Controls.Add(startDatePicker, 1, 0);
             tableLayoutPanel2.Controls.Add(startDateCheckBox, 0, 0);
             tableLayoutPanel2.Controls.Add(endDatePicker, 4, 0);
             tableLayoutPanel2.Controls.Add(endDateCheckbox, 3, 0);
-            tableLayoutPanel2.Controls.Add(goFilterButton, 5, 0);
-            tableLayoutPanel2.Controls.Add(clearFilterButton, 6, 0);
+            tableLayoutPanel2.Controls.Add(clearFilterButton, 7, 0);
+            tableLayoutPanel2.Controls.Add(goFilterButton, 6, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(0, 0);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -370,7 +361,7 @@
             // 
             endDatePicker.Dock = DockStyle.Fill;
             endDatePicker.Enabled = false;
-            endDatePicker.Location = new Point(138, 3);
+            endDatePicker.Location = new Point(97, 3);
             endDatePicker.Name = "endDatePicker";
             endDatePicker.Size = new Size(234, 27);
             endDatePicker.TabIndex = 3;
@@ -379,7 +370,7 @@
             // 
             endDateCheckbox.AutoSize = true;
             endDateCheckbox.Dock = DockStyle.Fill;
-            endDateCheckbox.Location = new Point(25, 3);
+            endDateCheckbox.Location = new Point(-16, 3);
             endDateCheckbox.Name = "endDateCheckbox";
             endDateCheckbox.Size = new Size(107, 28);
             endDateCheckbox.TabIndex = 5;
@@ -387,26 +378,39 @@
             endDateCheckbox.UseVisualStyleBackColor = true;
             endDateCheckbox.CheckedChanged += endDateCheckbox_CheckedChanged;
             // 
-            // goFilterButton
-            // 
-            goFilterButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            goFilterButton.Location = new Point(378, 3);
-            goFilterButton.Name = "goFilterButton";
-            goFilterButton.Size = new Size(1, 28);
-            goFilterButton.TabIndex = 6;
-            goFilterButton.Text = "Filter";
-            goFilterButton.UseVisualStyleBackColor = true;
-            goFilterButton.Click += goFilterButton_Click;
-            // 
             // clearFilterButton
             // 
-            clearFilterButton.Location = new Point(54, 3);
+            clearFilterButton.Location = new Point(53, 3);
             clearFilterButton.Name = "clearFilterButton";
             clearFilterButton.Size = new Size(94, 28);
             clearFilterButton.TabIndex = 7;
             clearFilterButton.Text = "Clear filter";
             clearFilterButton.UseVisualStyleBackColor = true;
             clearFilterButton.Click += clearFilterButton_Click;
+            // 
+            // goFilterButton
+            // 
+            goFilterButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            goFilterButton.Location = new Point(-28, 3);
+            goFilterButton.Name = "goFilterButton";
+            goFilterButton.Size = new Size(75, 28);
+            goFilterButton.TabIndex = 6;
+            goFilterButton.Text = "Filter";
+            goFilterButton.UseVisualStyleBackColor = true;
+            goFilterButton.Click += goFilterButton_Click;
+            // 
+            // taskList
+            // 
+            taskList.AutoScroll = true;
+            taskList.BorderStyle = BorderStyle.Fixed3D;
+            taskList.Dock = DockStyle.Fill;
+            taskList.Location = new Point(0, 0);
+            taskList.Name = "taskList";
+            taskList.Size = new Size(1097, 369);
+            taskList.TabIndex = 0;
+            taskList.EditItem += taskList_EditItem;
+            taskList.DeleteItem += taskList_DeleteItem;
+            taskList.SwitchStatus += taskListBox1_SwitchStatus;
             // 
             // TaskViewForm
             // 
@@ -439,7 +443,6 @@
 
         #endregion
 
-        private TaskListBox taskList;
         private Label label1;
         private Button createButton;
         private Panel panel1;
@@ -466,5 +469,7 @@
         private Button goFilterButton;
         private Button clearFilterButton;
         private Button scheduleButton;
+        private TaskListBox taskList;
+        private ToolTip toolTip1;
     }
 }

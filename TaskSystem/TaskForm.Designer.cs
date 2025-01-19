@@ -37,7 +37,6 @@
             label3 = new Label();
             label4 = new Label();
             button1 = new Button();
-            cbIsDone = new CheckBox();
             SuspendLayout();
             // 
             // dtpDeadline
@@ -50,8 +49,9 @@
             // 
             // cmbPriority
             // 
+            cmbPriority.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbPriority.FormattingEnabled = true;
-            cmbPriority.Items.AddRange(new object[] { "Not important", "Less important", "Important", "Very important", "Urgent" });
+            cmbPriority.Items.AddRange(new object[] { "Not important", "Less important", "Important", "Very importany", "Urgent" });
             cmbPriority.Location = new Point(139, 52);
             cmbPriority.Margin = new Padding(3, 4, 3, 4);
             cmbPriority.Name = "cmbPriority";
@@ -60,7 +60,7 @@
             // 
             // txtTitle
             // 
-            txtTitle.Location = new Point(142, 165);
+            txtTitle.Location = new Point(139, 159);
             txtTitle.Margin = new Padding(3, 4, 3, 4);
             txtTitle.Name = "txtTitle";
             txtTitle.Size = new Size(220, 27);
@@ -68,7 +68,7 @@
             // 
             // txtDescription
             // 
-            txtDescription.Location = new Point(38, 265);
+            txtDescription.Location = new Point(35, 262);
             txtDescription.Margin = new Padding(3, 4, 3, 4);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
@@ -96,7 +96,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(38, 165);
+            label3.Location = new Point(39, 159);
             label3.Name = "label3";
             label3.Size = new Size(66, 20);
             label3.TabIndex = 7;
@@ -105,7 +105,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(38, 221);
+            label4.Location = new Point(39, 208);
             label4.Name = "label4";
             label4.Size = new Size(114, 20);
             label4.TabIndex = 8;
@@ -113,8 +113,7 @@
             // 
             // button1
             // 
-            button1.DialogResult = DialogResult.OK;
-            button1.Location = new Point(142, 382);
+            button1.Location = new Point(139, 370);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.RightToLeft = RightToLeft.Yes;
@@ -124,22 +123,11 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
-            // cbIsDone
-            // 
-            cbIsDone.AutoSize = true;
-            cbIsDone.Location = new Point(38, 12);
-            cbIsDone.Name = "cbIsDone";
-            cbIsDone.Size = new Size(67, 24);
-            cbIsDone.TabIndex = 0;
-            cbIsDone.Text = "Done";
-            cbIsDone.UseVisualStyleBackColor = true;
-            // 
             // TaskForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(400, 428);
-            Controls.Add(cbIsDone);
+            ClientSize = new Size(400, 415);
             Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -149,7 +137,10 @@
             Controls.Add(txtTitle);
             Controls.Add(cmbPriority);
             Controls.Add(dtpDeadline);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "TaskForm";
             Text = "Task editor";
             Shown += TaskForm_Shown;
@@ -168,6 +159,5 @@
         private Label label3;
         private Label label4;
         private Button button1;
-        private CheckBox cbIsDone;
     }
 }

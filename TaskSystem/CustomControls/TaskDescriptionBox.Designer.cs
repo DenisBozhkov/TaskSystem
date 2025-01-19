@@ -49,18 +49,18 @@
             editButtons.Controls.Add(editButton, 0, 0);
             editButtons.Controls.Add(deleteButton, 1, 0);
             editButtons.Dock = DockStyle.Top;
-            editButtons.Location = new Point(0, 40);
+            editButtons.Location = new Point(10, 43);
             editButtons.Name = "editButtons";
             editButtons.RowCount = 1;
             editButtons.RowStyles.Add(new RowStyle());
-            editButtons.Size = new Size(467, 32);
+            editButtons.Size = new Size(447, 32);
             editButtons.TabIndex = 0;
             // 
             // editButton
             // 
             editButton.Dock = DockStyle.Right;
             editButton.FlatStyle = FlatStyle.Flat;
-            editButton.Location = new Point(139, 0);
+            editButton.Location = new Point(129, 0);
             editButton.Margin = new Padding(0, 0, 0, 3);
             editButton.Name = "editButton";
             editButton.Size = new Size(94, 29);
@@ -72,7 +72,7 @@
             // deleteButton
             // 
             deleteButton.FlatStyle = FlatStyle.Flat;
-            deleteButton.Location = new Point(233, 0);
+            deleteButton.Location = new Point(223, 0);
             deleteButton.Margin = new Padding(0, 0, 0, 3);
             deleteButton.Name = "deleteButton";
             deleteButton.Size = new Size(94, 29);
@@ -109,16 +109,16 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(createdByLabel);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(10, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(467, 20);
+            panel1.Size = new Size(447, 20);
             panel1.TabIndex = 3;
             // 
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Dock = DockStyle.Top;
-            descriptionLabel.Location = new Point(0, 20);
+            descriptionLabel.Location = new Point(10, 23);
             descriptionLabel.Margin = new Padding(3);
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new Size(85, 20);
@@ -134,6 +134,7 @@
             Controls.Add(descriptionLabel);
             Controls.Add(panel1);
             Name = "TaskDescriptionBox";
+            Padding = new Padding(10, 3, 10, 3);
             Size = new Size(467, 196);
             Resize += TaskDescriptionBox_Resize;
             editButtons.ResumeLayout(false);
