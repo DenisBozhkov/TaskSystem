@@ -8,14 +8,7 @@ namespace TaskSystem
         public TaskListBox()
         {
             InitializeComponent();
-            Headings = new(true)
-            {
-                AutoSize = true,
-                Dock = DockStyle.Top
-            };
         }
-
-        private readonly TaskVisualBox Headings;
 
         public void SetLoggedInProfile(ProfileModel? profile)
         {
@@ -57,9 +50,15 @@ namespace TaskSystem
                 controls.Add(description);
                 controls.Add(box);
             }
-            Controls.Clear();
+            controls.Add(new TaskVisualBox(true)
+            {
+                AutoSize = true,
+                Dock = DockStyle.Top
+            });
+            int currentCount = Controls.Count - 1;
             Controls.AddRange([.. controls]);
-            Controls.Add(Headings);
+            for (int i = currentCount; i >= 0; i--)
+                Controls.RemoveAt(i);
         }
 
         private void Box_StatusClicked(object? sender, TaskVisualBox.StatusClickedEventArgs e)
