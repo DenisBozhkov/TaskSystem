@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using System.Globalization;
 using TaskSystem.Models;
 
 namespace TaskSystem
@@ -113,7 +114,7 @@ namespace TaskSystem
                     importancyLabel.ForeColor = Color.Red;
                     break;
             }
-            deadlineLabel.Text = task.Deadline.ToString("D");
+            deadlineLabel.Text = task.Deadline.ToString("d MMMM, yyyy", new CultureInfo("en-us"));
             titleLabel.Text = task.Title;
             if (task.IsDone)
             {

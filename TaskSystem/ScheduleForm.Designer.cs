@@ -61,6 +61,7 @@
             taskListBox1.Name = "taskListBox1";
             taskListBox1.Size = new Size(884, 373);
             taskListBox1.TabIndex = 2;
+            taskListBox1.SwitchStatus += taskListBox1_SwitchStatus;
             // 
             // tableLayoutPanel1
             // 

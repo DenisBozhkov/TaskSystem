@@ -159,14 +159,7 @@ namespace TaskSystem
 
         private void taskListBox1_SwitchStatus(object sender, TaskSystem.TaskListBox.ChangeItemEventArgs e)
         {
-            SqlConnection conn = new(GlobalService.DbConnectionString);
-            conn.Open();
-            SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "UPDATE Tasks SET IsDone=@IsDone WHERE Id=@Id";
-            cmd.Parameters.AddWithValue("@IsDone", !e.Item.IsDone);
-            cmd.Parameters.AddWithValue("@Id", e.Item.Id);
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            TasksService.UpdateStatus(e.Item.Id, !e.Item.IsDone);
             taskList.Rebind(TasksService.Tasks);
         }
 

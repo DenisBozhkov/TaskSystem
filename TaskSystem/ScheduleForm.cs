@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace TaskSystem
 {
@@ -29,6 +32,9 @@ namespace TaskSystem
             var tasks = TasksService.GetTasks(dateTimePicker1.Value.Date, ofLoggedInUser);
             UpdateStatusLabel(tasks.Count, tasks.Count(x => !x.IsDone));
             taskListBox1.Rebind(tasks);
+            foreach (Control control in taskListBox1.Controls)
+                if (control is TaskVisualBox box && box.Tag is TaskDescriptionBox descriptionBox1)
+                    box.CanEdit = descriptionBox1.TaskAuthor?.CompareTo(GlobalService.LoggedInProfile?.UserName) == 0;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -51,6 +57,13 @@ namespace TaskSystem
             ofLoggedInUser = checkBox1.Checked;
             Rebind();
         }
+
+        private void taskListBox1_SwitchStatus(object sender, TaskSystem.TaskListBox.ChangeItemEventArgs e)
+        {
+            TasksService.UpdateStatus(e.Item.Id, !e.Item.IsDone);
+            Rebind();
+        }
+
         protected override CreateParams CreateParams
         {
             get

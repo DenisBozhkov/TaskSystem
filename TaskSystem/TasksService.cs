@@ -78,5 +78,16 @@ namespace TaskSystem
                 return tasks;
             }
         }
+        public static void UpdateStatus(int id, bool status)
+        {
+            SqlConnection conn = new(GlobalService.DbConnectionString);
+            conn.Open();
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = "UPDATE Tasks SET IsDone=@IsDone WHERE Id=@Id";
+            cmd.Parameters.AddWithValue("@IsDone", status);
+            cmd.Parameters.AddWithValue("@Id", id);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
     }
 }
