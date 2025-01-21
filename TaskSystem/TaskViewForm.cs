@@ -5,8 +5,6 @@ namespace TaskSystem
 {
     public partial class TaskViewForm : Form
     {
-        private readonly CreateProfileDialog createProfileDialog = new();
-
         public TaskViewForm()
         {
             InitializeComponent();
@@ -81,8 +79,9 @@ namespace TaskSystem
 
         private void registerButton_Click(object sender, EventArgs e)
         {
-            if (createProfileDialog.ShowDialog(this) == DialogResult.OK && createProfileDialog.Profile != null)
-                ProfilesService.CreateProfile(createProfileDialog.Profile);
+            CreateProfileDialog dialog = new();
+            if (dialog.ShowDialog(this) == DialogResult.OK && dialog.Profile != null)
+                ProfilesService.CreateProfile(dialog.Profile);
         }
 
         private void createButton_Click(object sender, EventArgs e)

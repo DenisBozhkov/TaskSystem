@@ -15,17 +15,17 @@ namespace TaskSystem
             try
             {
                 comm = conn.CreateCommand();
-                comm.CommandText = "USE Tasks";
+                comm.CommandText = "USE Tasks05396954C00B48169D328FF72F512171";
                 comm.ExecuteNonQuery();
             }
             catch (Exception)
             {
                 comm = conn.CreateCommand();
-                comm.CommandText = "CREATE DATABASE Tasks COLLATE Cyrillic_General_CI_AS";
+                comm.CommandText = "CREATE DATABASE Tasks05396954C00B48169D328FF72F512171 COLLATE Cyrillic_General_CI_AS";
                 comm.ExecuteNonQuery();
 
                 comm = conn.CreateCommand();
-                comm.CommandText = "USE Tasks";
+                comm.CommandText = "USE Tasks05396954C00B48169D328FF72F512171";
                 comm.ExecuteNonQuery();
 
                 comm = conn.CreateCommand();
@@ -47,7 +47,7 @@ namespace TaskSystem
                 comm.ExecuteNonQuery();
             }
             conn.Close();
-            DbConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Tasks";
+            DbConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Tasks05396954C00B48169D328FF72F512171";
         }
     }
 }
